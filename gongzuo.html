@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公考工作台 · 何裕恺</title>
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+  <div class="layout">
+    <aside class="rail">
+      <div class="brand">
+        <div class="seal">法宝</div>
+        <h1>公考工作台</h1>
+        <p>2026.8.17–9.19 题目对应、方法口径、漏缺账本。打开就能用。</p>
+      </div>
+      <nav class="nav">
+        <div class="sec">每天用</div>
+        <a href="#/overview" data-route="overview" class="active">总览</a>
+        <a href="#/field" data-route="field">上场卡</a>
+        <a href="#/ledger" data-route="ledger">漏缺账本</a>
+        <div class="sec">按科目</div>
+        <a href="#/verbal" data-route="verbal">言语</a>
+        <a href="#/ziliao" data-route="ziliao">资料分析</a>
+        <a href="#/judge" data-route="judge">判断推理</a>
+        <a href="#/politics" data-route="politics">政治时政</a>
+        <a href="#/zhengzhi" data-route="zhengzhi">政治理论</a>
+        <a href="#/quiz" data-route="quiz">政治题库</a>
+        <a href="#/yicuo" data-route="yicuo">易错题</a>
+        <a href="#/shizheng" data-route="shizheng">时政对错</a>
+        <a href="#/essay" data-route="essay">申论</a>
+        <a href="#/quant" data-route="quant">数量</a>
+        <div class="sec">底账</div>
+        <a href="#/timeline" data-route="timeline">本月足迹</a>
+        <a href="#/library" data-route="library">材料库</a>
+        <a href="#/search" data-route="search">检索</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <h2 id="title">总览</h2>
+        <div class="who" id="who"></div>
+        <div class="search">
+          <input id="q" type="search" placeholder="搜套次 / 错因 / 时政原话，回车">
+          <button type="button" id="goSearch">检索</button>
+        </div>
+      </div>
+      <div id="view"></div>
+      <footer class="site">依据本地公考资料与 2026 年 8–9 月答疑窗口整理。口径以红领巾、花生十三、毛娃、龙飞、小Y、白鹭课上原答为准。空白模块不编假体系。</footer>
+    </main>
+  </div>
+  <script src="data.js?v=10"></script>
+  <script src="shizheng-traps.js?v=8"></script>
+  <script src="zhengzhi-quiz.js?v=2"></script>
+  <script src="app.js?v=18"></script>
+</body>
+</html>
