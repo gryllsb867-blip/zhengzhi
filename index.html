@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>政治理论 · 何裕恺</title>
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+  <div class="layout">
+    <aside class="rail">
+      <div class="brand">
+        <div class="seal">法宝</div>
+        <h1>政治理论</h1>
+        <p>题库、易错题、时政对错。正确表述在左。</p>
+      </div>
+      <nav class="nav">
+        <div class="sec">政治理论</div>
+        <a href="#/zhengzhi" data-route="zhengzhi">首页</a>
+        <a href="#/quiz" data-route="quiz">题库</a>
+        <a href="#/yicuo" data-route="yicuo">易错题</a>
+        <a href="#/shizheng" data-route="shizheng">时政对错</a>
+        <a href="#/politics" data-route="politics">方法口径</a>
+        <div class="sec">返回</div>
+        <a href="gongzuo.html#/overview">整张工作台</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <h2 id="title">政治理论</h2>
+        <div class="who" id="who"></div>
+        <div class="search">
+          <input id="q" type="search" placeholder="搜套次 / 错因 / 时政原话，回车">
+          <button type="button" id="goSearch">检索</button>
+        </div>
+      </div>
+      <div id="view"></div>
+      <footer class="site">政治理论单独入口。口径以小Y、小黑课上原答为准。</footer>
+    </main>
+  </div>
+  <script>
+    (function () {
+      var h = location.hash || "";
+      if (!h || h === "#" || h === "#/" || h === "#/overview") location.replace("#/zhengzhi");
+    })();
+  </script>
+  <script src="data.js?v=10"></script>
+  <script src="shizheng-traps.js?v=8"></script>
+  <script src="zhengzhi-quiz.js?v=2"></script>
+  <script src="app.js?v=18"></script>
+</body>
+</html>
